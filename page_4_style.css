@@ -1,0 +1,138 @@
+.setBackGround{
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .centerAlign{
+    display: flex;
+    /* justify-items: center;
+    align-items: center; */
+    flex-direction: column;
+    color: #720E07;
+  }
+  
+  .fontForTitle{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: left;
+    line-height: 4vw;
+    color: aliceblue;
+  }
+  
+  .fontForCarousel{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+    color: aliceblue;
+  }
+  
+  .fontForSubText{
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    line-height: 35px;
+    font-size: 35px;
+    font-weight: 800;
+    color: #720E07;
+  }
+  
+  .fontForSubSubText{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 30px;
+    color: #720E07;
+  }
+  
+  .multiColor{
+    display: flex;
+    flex-direction: row
+  }
+  
+  .padding{
+    margin-top: 5vh;
+  }
+  
+  .paddingHigh{
+    margin-top: 10vh;
+  }
+
+  .button {
+    height: 10vh;
+    display: inline-block;
+    padding: 2.55rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  .button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #008fb3;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  .button:hover {
+    color: #fff;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
+  /* optional reset for presentation */
+  * {
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .container {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    color: #777;
+  }
+  span {
+    display: block;
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    color: #777;
+  }
+  span a {
+    font-size: 0.7rem;
+    color: #999;
+    text-decoration: underline;
+  }
+  

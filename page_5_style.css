@@ -1,0 +1,280 @@
+.setBackGround{
+    display: flex;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: auto;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .centerAlign{
+    display: flex;
+    /* justify-items: center;
+    align-items: center; */
+    flex-direction: column;
+    color: #720E07;
+  }
+  
+  .fontForTitle{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: left;
+    line-height: 4vw;
+    color: aliceblue;
+  }
+  
+  .fontForCarousel{
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 15px;
+    color: aliceblue;
+  }
+  
+  .fontForSubText{
+    font-family: 'Cairo', sans-serif;
+    text-align: center;
+    line-height: 35px;
+    font-size: 35px;
+    font-weight: 800;
+    color: #720E07;
+  }
+  
+  .fontForSubSubText{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 30px;
+    color: #720E07;
+  }
+  
+  .multiColor{
+    display: flex;
+    flex-direction: row
+  }
+  
+  .padding{
+    margin-top: 5vh;
+  }
+  
+  .paddingHigh{
+    margin-top: 10vh;
+  }
+
+  .button {
+    height: 10vh;
+    display: inline-block;
+    padding: 2.55rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0cf;
+    border-radius: 10rem;
+    z-index: -2;
+  }
+  .button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #008fb3;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+  }
+  .button:hover {
+    color: #fff;
+  }
+  .button:hover:before {
+    width: 100%;
+  }
+  /* optional reset for presentation */
+  * {
+    font-family: Arial;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .container {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+    color: #777;
+  }
+  span {
+    display: block;
+    margin-top: 2rem;
+    font-size: 0.7rem;
+    color: #777;
+  }
+  span a {
+    font-size: 0.7rem;
+    color: #999;
+    text-decoration: underline;
+  }
+
+  *
+{
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h5
+{
+  margin:0px;
+  font-size:1.4em;
+  font-weight:700;
+}
+
+p
+{
+  font-size:12px;
+}
+
+.center
+{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* End Non-Essential  */
+
+.property-card
+{
+  height:18em;
+  width:14em;
+  display:-webkit-box;
+  display:-ms-flexbox;
+  display:flex;
+  -webkit-box-orient:vertical;
+  -webkit-box-direction:normal;
+  -ms-flex-direction:column;
+  flex-direction:column;
+  position:relative;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius:16px;
+  overflow:hidden;
+  -webkit-box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+  box-shadow:  15px 15px 27px #e1e1e3, -15px -15px 27px #ffffff;
+}
+/* ^-- The margin bottom is necessary for the drop shadow otherwise it gets clipped in certain cases. */
+
+/* Top Half of card, image. */
+
+.property-image
+{
+  height:6em;
+  width:14em;
+  padding:1em 2em;
+  position:Absolute;
+  top:0px;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  background-image:url('https://cdn.photographylife.com/wp-content/uploads/2017/01/What-is-landscape-photography.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+}
+
+/* Bottom Card Section */
+
+.property-description
+{
+  background-color: #FAFAFC;
+  height:12em;
+  width:14em;
+  position:absolute;
+  bottom:0em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 0.5em 1em;
+  text-align:center;
+}
+
+/* Social Icons */
+
+.property-social-icons
+{
+  width:1em;
+  height:1em;
+  background-color:black;
+  position:absolute;
+  bottom:1em;
+  left:1em;
+  -webkit-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* Property Cards Hover States */
+
+.property-card:hover .property-description
+{
+  height:0em;
+  padding:0px 1em;
+}
+.property-card:hover .property-image
+{
+  height:18em;
+}
+
+.property-card:hover .property-social-icons
+{
+  background-color:white;
+}
+
+.property-card:hover .property-social-icons:hover
+{
+  background-color:blue;
+  cursor:pointer;
+}
+
+
+/* Optional
+
+.property-image-title
+{
+text-align:center;
+position:Relative;
+top:30%;
+opacity:0;
+transition:all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
+color:black;
+font-size:1.2em;
+}
+
+.property-card:hover .property-image-title
+{
+opacity:1;
+}
+
+*/
+  
