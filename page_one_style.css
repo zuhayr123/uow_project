@@ -63,7 +63,7 @@
     margin-top: 10vh;
   }
 
-  /* .button {
+  .button {
     background-color: #f4511e;
     border: none;
     color: white;
@@ -80,7 +80,7 @@
   
   .button:hover {opacity: 1}
 
-  .button {
+  /* .button {
     height: 10vh;
     display: inline-block;
     padding: 2.55rem 1.25rem;
